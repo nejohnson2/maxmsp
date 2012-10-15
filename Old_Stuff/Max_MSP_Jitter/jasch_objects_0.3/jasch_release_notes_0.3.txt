@@ -1,0 +1,204 @@
+release notes for the
+
+    jasch_objects - version 0.3 - 25/07/2006
+
+released under the Creative Commons License Attribution-NonCommercial-ShareAlike 2.0
+see file CreativeCommonsPublicLicense for more details.
+
+this package can be found here:
+http://www.jasch.ch/dl
+
+address any issues and queries to: 
+info@jasch.ch
+
+//////////
+
+0.3 notes
+
+universal binary build
+
+improved objects
+
+    string_lib - all objects reworked to accept all types without casting to symbol first 
+    + added two modes for reverse processing etc.
+    detox - now parses multiple attributes
+	
+//////////
+
+0.2.5 notes
+
+new objects
+
+    bartime - display time in bar:beats:ticks(ms)
+    bcf2000 - parse nrpns from MIDI-stream    
+    bitlist - binary conversion with zeropadding
+    datatype - find datatype of an element
+    db*~ - multply signal by dB values with slide interpolation
+    fromascii -  ascii code to atom  conversion
+    getenv - get environment variables (on mac: abstraction using shell)
+    mmmlist - min, mean, max on a list
+    timestamp - get sysdate & time and ms
+    toascii - atom to ascii code conversion
+    __ (double underscore) - multiple prepender
+    
+fixed objects
+    
+    round - fixed negative rounding bug  
+    strcut - fixed typed in argument bug
+
+improved objects
+
+    slidelist - threshold digits to snap to target value
+    slicelist - singleslice mode added
+    and much more....
+	
+//////////
+
+0.2.1 notes - 28/10/2004
+
+first release of the windows port of these objects
+
+new objects:
+    
+    dist~ - distance gain logarithmic
+    stricmp - stricmp - compare string case insensitive
+    strcoll - compare two strings <, ==, >
+ 
+
+///////////////
+
+0.2 notes - 15/08/2004
+
+new objectmapping and objectlist files: put into 
+Library/Application Support/Cycling '74/init (this new feature is not available
+for OS 9 max 4.x, rename dot-external to . and it's helpfile to from dot.help
+to ..help)
+
+due to an object name conflict with the new javascript external in Max4.5 the 
+external object "js" is being renamed to "mathlist". this unfortunately breaks 
+old patches, you'll have to rename any instance of "js" to "mathlist".
+
+new objects:
+    
+    timex - convert time to ms and vice-versa, display as list or symbol
+    bytecount - returns the size of a file in bytes
+    compare - compares int/float or symbols, returns smaller, equal or larger
+    replacelist - replace items in a list
+    insertlist - insert items into a list
+    rotatexyz - quaternion roation (angle axis) from xyz angles
+    mathlist - replaces "js" object (renamed)
+    mtx - mutually exclusive switching
+
+improved objects:
+
+    underscore now accpets all types and amounts of args MAXSIZE 1024
+    interpol now accepts arguments for steps, mode and initializing lists
+    strcut / strrcut now treat end cases correctly
+    detox now outputs the tree and tagtype informations
+    multisplit added firstsplit method
+    
+standard C math functions: (some of them not poperational with the expr object)
+	
+	exp, exp2, hypot, ldexp, log, log2, log10, logb
+
+//////////
+
+installation instructions:
+     
+OS X (MaxMSP 4.2 and newer)
+   
+
+    jasch_carbon: place folder into Library/Application Support/Cycling 
+    '74/externals or wherever you keep your 3rd party externals.
+    
+    jasch-extras: place content into Applications/MaxMSP 4.x/patches/extras 
+    to access overview patch from the extras menu
+    
+    jasch-C74-init: place content into Library/Application Support/Cycling '74/init 
+    to place jasch-objects into new object list and remap the dot-object
+        
+    jasch-help: place into MaxMSP 4.x/max-help or wherever you keep your 
+    3rd party externals.
+
+    delete jasch_classic
+    
+Windows XP (Max 4.5 or newer)
+    
+    jasch_objects: place folder into C:\Program Files\Common Files\Cycling '74\externals 
+    or wherever you keep your 3rd party externals.
+    
+    jasch-extras: place content into C:\Program Files\Cycling '74\MaxMSP 4.5\patches\extras 
+    to access overview patch from the extras menu
+    
+    jasch-C74-init: place content into C:\Program Files\Common Files\Cycling '74\init
+    to place jasch-objects into new object list and remap the dot-object, db*~ and string objects
+        
+    jasch-help: place into C:\Program Files\Cycling '74\MaxMSP 4.5\max-help 
+    or wherever you keep your 3rd party externals.
+    
+OS 9 (MaxMSP 4 to 4.1, some older objects may work under under Max 3.x)
+    
+    jasch_classic: place folder into Macintosh HD:Applications:MaxMSP 
+    4.x:externals or wherever you keep your 3rd party externals.
+    
+    jasch-extras: place content into MaxMSP 4.x:patches:extras to access 
+    overview patch from the extras menu
+        
+    jasch-help: place into Macintosh HD:Applications:MaxMSP 4.x:max-help
+    
+    
+    delete jasch_carbon and jasch_C74_init folders
+
+
+//////////
+
+release 0.1.9 
+notes 01/03/2004
+
+return of the . (dot) object usable again with the correct objectmapping
+(equivalent to [b 1] or [t b] : shorthand)
+
+//////////
+
+new objects:
+
+	changelist - filter out repeated lists, supports all standard datatypes
+	multisplit - split a stream of values into several ranges
+	n! - factorial of n
+	ceil - next higher integer from float
+	coypsign - copy the sign from sign-value to value
+	floor - next lower integer fron float
+	peaklist - find the highest value in list of ints/floats
+	pop - bang counter, filter or repeat bangs
+	round - round to closest integer
+
+
+improved objects:
+
+	db2a~ - added MIDI as int input mapped with logaritmical curve and 
+        adjustable unity value.
+	checklist - added symbol comparison capabilty and mode 0/1 for change 
+        functionality, supports all standard datatypes
+	slicelist - added symbol slicing capabilty, supports all standard datatypes
+	slidelist - added second inlet for slidefactor
+
+
+beta objects:
+
+    standard C math functions (some of them not possible with the expr object):
+
+    exp - euler constant raised to nth power
+    exp2 - 2^n, 2 raised to nth power
+    hypot - the hypotenuse calculated from the length of two sides
+    ldexp - value * 2^exp
+    log - natural logarithm of value
+    log2 - base 2 logarithm to value
+    log10 - base 10 logarithm to value
+    logb - logarithmic exponent of value
+    
+    some features are not implemeted yet
+
+////////////
+
+
+

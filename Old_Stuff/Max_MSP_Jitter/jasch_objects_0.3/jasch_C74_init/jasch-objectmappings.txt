@@ -1,0 +1,37 @@
+max objectfile db*~ dbmult~;
+max objectfile . dot;
+max objectfile memchr memchr2;
+max objectfile memcmp memcmp2;
+max objectfile memcpy memcpy2;
+max objectfile memmove memmove2;
+max objectfile memset memset2;
+
+max objectfile str2ul str2ul2;
+max objectfile strcat strcat2;
+max objectfile strchr strchr2;
+max objectfile strcmp strcmp2;
+max objectfile strcoll strcoll2;
+max objectfile strcpy strcpy2;
+max objectfile strcspn strcspn2;
+max objectfile strcut strcut2;
+max objectfile strfilt strfilt2;
+max objectfile stricmp stricmp2;
+max objectfile strlen strlen2;
+max objectfile strncat strncat2;
+max objectfile strncmp strncmp2;
+max objectfile strncpy strncpy2; 
+max objectfile strpbrk strpbrk2;
+max objectfile strrchr strrchr2;
+max objectfile strrcut strrcut2;
+max objectfile strspn strspn2;
+max objectfile strstr strstr2;
+max objectfile strtok strtok2;
+
+
+
+
+
+
+
+
+

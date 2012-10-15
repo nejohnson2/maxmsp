@@ -1,0 +1,41 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u952000795",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"flonum" : [ 0.5 ],
+					"flonum[1]" : [ 0.051 ],
+					"flonum[2]" : [ 4.2 ],
+					"flonum[3]" : [ 0.81 ],
+					"flonum[4]" : [ -0.05 ],
+					"flonum[5]" : [ 1.1 ],
+					"flonum[6]" : [ 0.35 ],
+					"number" : [ 3 ],
+					"toggle" : [ 1 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"flonum" : [ 0.5 ],
+					"flonum[1]" : [ 0.051 ],
+					"flonum[2]" : [ 21.0 ],
+					"flonum[3]" : [ 0.037 ],
+					"flonum[4]" : [ 3.52 ],
+					"flonum[5]" : [ 1.0 ],
+					"flonum[6]" : [ 0.35 ],
+					"number" : [ 3 ],
+					"toggle" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

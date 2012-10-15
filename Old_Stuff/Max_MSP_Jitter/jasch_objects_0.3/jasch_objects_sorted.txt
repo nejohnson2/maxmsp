@@ -1,0 +1,105 @@
+_  		- (underscore) shorthand prepend set
+__  		- (double underscore) multiple prepend
+.  		- (dot) shorthand bang
+3Dcartopol 	- convert cartesian to polar coordinates in 3D (lefthanded coordinate system)
+3Dmatrix 	- perform matrix-operations on 3D-points: translate / scale / rotate / skew
+3Dpoltocar 	- convert polar to cartesian coordinates in 3D (lefthanded coordinate system)
+180wrap 	- wrap angles at 180 / -180
+a2db~ 		- linear amplitude to decibel conversion
+bartime 	- display time in bar:beats:ticks/ms
+bcf2000 	- parse nrpn value from MIDI stream
+bezier 		- bezier curve from 4 ctrl points in 3D
+bitlist 	- integer to bitlist and back w/ zeropadding
+bits2int 	- bitlist to integer (32 bit)
+bspline 	- bspline curve from n ctrl points in 3D
+bytecount 	- size of a file in bytes
+ccext 		- merge 2 7bit-integers to 14 bit / change / deflutter (also deflutter only)
+ceil 		- next higher integer from float
+centlist 	- center of gravity of a list
+changelist 	- filter out repeated lists, supports all standard datatypes
+checklist 	- compare two lists
+compare 	- compare 2 elements <, ==, >
+copysign 	- copy the sign from sign-value to value
+d2r 		- convert degree to radians / offset
+datatype 	- show datatype
+db*~ 		- multiply signal by dB w/ slide interpolation
+db2a~ 		- decibel to linear amplitude conversion
+dcblocker~ 	- remove DC offset from a signal
+deltalist 	- subtract one list from another
+detox 		- extract value and content from tags
+dist~ 		- logarithmic distance gain formula
+duplist 	- remove duplicates from a list
+euler_constant - e and it's reciprocal
+exp 		- e^n : euler constant raised to nth power
+exp2 		- 2^n : 2 raised to nth power
+floor 		- next lower integer fron float
+fromascii 	- ascii code to atom(s)
+gaze 		- 3D to 2D perspective projection for points in 3D
+getenv 		- get environment variables from system (on mac: abstraction using shell)
+goldensection - the golden section and it's reciprocal
+heading 	- heading and inclination angles from joystick
+hexlist 	- 8bit ascii to hex list
+hsv2rgb 	- color space conversion (circular swatch)
+hypot 		- hypotenuse from two sides
+idx 		- prepend index to anything / extended counter
+insertlist 	- insert item(s) into list
+interpol 	- interpolate lists of floats/ints by index or steps
+intox 		- en-tab line for xml formatting
+ldexp 		- value * 2^exp
+log 		- natural logarithm
+log2 		- base 2 logarithm
+log10 		- base 10 logarithm
+logb 		- logarithmic exponent
+mathlist 	- basic math operations / bitshifting on lists
+memchr 		- search buffer for a character
+memcmp 		- compare two buffers
+memcpy 		- copy bytes to buffer from buffer
+memmove 	- copy bytes to buffer from buffer
+memset 		- fill buffer with specific character
+mmmlist 	- min, max, mean of a list of value
+mtx 		- mutually exclusive switching
+multisplit 	- split a stream of values into several ranges
+n! 		- factorial of n
+nn2bits 	- integer to bitlist (32 bit)
+peakfollow~	- follow signal with exponential decay
+peaklist 	- highest/lowest value of a list
+pi_constant	- pi and it's reciprocal
+piwrap 		- wrap angles at pi / -pi
+pop 		- bang counter, filter or repeat bangs 
+posit 		- infos about objects, class-name, scripting name, box-coordinates
+r2d 		- convert radians to degree / offset
+replacelist	- replace item(s) in a list
+rgb2yuv 	- color space conversion (yuv, uvyv)
+rotatexyz 	- quaternion rotation from xyz angles
+round 		- round to next higher integer 
+slicelist 	- slice list into equal sublists
+slidelist 	- slide lowpass filter for list, int & float
+statlist 	- statistics on a list
+str2ul 		- convert case of characters
+strcat 		- append string
+strchr 		- find character in string
+strcmp 		- compare two strings
+strcoll 	- compare to strings <, ==, >
+strcpy 		- copy string
+strcspn 	- search string for occurence of characer set
+strcut 		- terminate string at specified position n
+streamlist 	- shifting register for list, int & float
+strfilt 	- filter string according to character type
+stricmp 	- compare two strings case insensitive
+strlen 		- string length
+strncat 	- append substring to string
+strncmp 	- compare some characters of two strings
+strncpy 	- copy characters from one string to another
+strpbrk 	- scan string for specific character
+strrchr 	- find last occurrence of character in string
+strrcut 	- eliminate section of string before specified position
+strspn 		- get length of substring composed of give characters
+strstr 		- find substring
+strtok 		- sequentially truncate string if delimiter is found
+sumlist 	- the sum of a list (sigma)
+timestamp 	- get sysdate & time and ms
+timex 		- convert time to ms and vice-versa
+toascii 	- atom(s) to ascii code 
+toxine 		- read and write file from/to disk by lines
+xframe~ 	- generate amplitudes from fft frame
+xorlist 	- the sum xor'ed members of a list

@@ -1,0 +1,141 @@
+jasch objects - 0.2.5 - 20/11/2005
+
+3D geometry
+3Dmatrix - perform matrix-operations on 3D-points: translate / scale / rotate / skew
+3Dcartopol - convert cartesian to polar coordinates in 3D (lefthanded coordinate system)
+3Dpoltocar - convert polar to cartesian coordinates in 3D (lefthanded coordinate system)
+bezier - bezier curve from 4 ctrl points in 3D
+bspline - bspline curve from n ctrl points in 3D
+gaze - 3D to 2D perspective projection for points in 3D
+rotatexyz - quaternion rotation from xyz angles
+
+angles
+180wrap - wrap angles at 180 / -180
+piwrap - wrap angles at pi / -pi
+d2r - convert degree to radians / offset
+r2d - convert radians to degree / offset
+
+list ops
+interpol - interpolate lists of floats/ints by index or steps
+centlist - center of gravity of a list
+changelist - filter out repeated lists, supports all standard datatypes
+checklist - compare two lists
+deltalist - subtract one list from another
+duplist - remove duplicates from a list
+hexlist - 8bit ascii to hex list
+insertlist - insert item(s) into list
+mathlist - basic math operations / bitshifting on lists
+mmmlist - min, max, mean of a list of value
+peaklist - highest/lowest value of a list
+replacelist - replace item(s) in a list
+slicelist - slice list into equal sublists
+slidelist - slide lowpass filter for list, int & float
+statlist - statistics on a list
+streamlist - shifting register for list, int & float
+sumlist - the sum of a list (sigma)
+xorlist - the sum xor'ed members of a list
+
+binary conversion
+bits2int - bitlist to integer (32 bit)
+nn2bits - integer to bitlist (32 bit)
+bitlist - integer to bitlist and back w/ zeropadding
+
+constants
+goldensection - the golden section and it's reciprocal
+euler_constant - e and it's reciprocal
+pi_constant - pi and it's reciprocal
+
+ascii-code conversion
+toascii - atom(s) to ascii code 
+fromascii - ascii code to atom(s)
+
+color conversion
+hsv2rgb - color space conversion (circular swatch)
+rgb2yuv - color space conversion (yuv, uvyv)
+
+shorthand
+. (dot) - shorthand bang
+_ (underscore) - shorthand prepend set
+__ (double underscore) - multiple prepend
+
+controllers
+ccext - merge 2 7bit-integers to 14 bit / change / deflutter (also deflutter only)
+heading - heading and inclination angles from joystick
+bcf2000 - parse nrpn value from MIDI stream
+
+patcher scripting
+posit - infos about objects, class-name, scripting name, box-coordinates
+
+various utilities
+bartime - display time in bar:beats:ticks/ms
+compare - compare 2 elements <, ==, >
+datatype - show datatype
+idx - prepend index to anything / extended counter
+mtx - mutually exclusive switching
+multisplit - split a stream of values into several ranges
+pop - bang counter, filter or repeat bangs 
+timestamp - get sysdate & time and ms
+timex - convert time to ms and vice-versa
+
+math
+ceil - next higher integer from float
+copysign - copy the sign from sign-value to value
+exp - e^n : euler constant raised to nth power
+exp2 - 2^n : 2 raised to nth power
+floor - next lower integer fron float
+hypot - hypotenuse from two sides
+ldexp - value * 2^exp
+log - natural logarithm
+log2 - base 2 logarithm
+log10 -base 10 logarithm
+logb - logarithmic exponent
+n! - factorial of n
+round - round to next higher integer 
+
+file I/O
+detox - extract value and content from tags
+intox - en-tab line for xml formatting
+toxine - read and write file from/to disk by lines
+bytecount - size of a file in bytes
+
+MSP objects
+a2db~ - linear amplitude to decibel conversion
+db2a~ - decibel to linear amplitude conversion
+db*~ - multiply signal by dB w/ slide interpolation
+dcblocker~ - remove DC offset from a signal
+dist~ - logarithmic distance gain formula
+peakfollow~ - follow signal with exponential decay
+xframe~ - generate amplitudes from fft frame
+
+<string.c> - Standard C library to manipulate C strings.
+strcat - append string
+strchr - find character in string
+strcmp - compare two strings
+strcoll - compare to strings <, ==, >
+strcpy - copy string
+strcspn - search string for occurence of characer set
+stricmp - compare two strings case insensitive
+strlen - string length
+strncat - append substring to string
+strncmp - compare some characters of two strings
+strncpy - copy characters from one string to another
+strpbrk - scan string for specific character
+strrchr - find last occurrence of character in string
+strspn - get length of substring composed of give characters
+strstr - find substring
+strtok - sequentially truncate string if delimiter is found
+memchr - search buffer for a character
+memcmp - compare two buffers
+memcpy - copy bytes to buffer from buffer
+memmove - copy bytes to buffer from buffer
+memset - fill buffer with specific character
+
+strcut - terminate string at specified position n
+strrcut - eliminate section of string before specified position
+str2ul - convert case of characters
+strfilt - filter string according to character type
+
+
+getenv - get environment variables from system (on mac: abstraction using shell)
+
+

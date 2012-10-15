@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string>MaxMSPCFMSupport 1.0 Copyrights © 2006 Cycling '74</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cycling74.pkg.MaxMSPCFMSupport</string>
+	<key>CFBundleName</key>
+	<string>MaxMSPCFMSupport</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>IFMajorVersion</key>
+	<integer>1</integer>
+	<key>IFMinorVersion</key>
+	<integer>0</integer>
+	<key>IFPkgBuildDate</key>
+	<date>2006-06-19T21:55:32Z</date>
+	<key>IFPkgBuildVersion</key>
+	<string>8I127</string>
+	<key>IFPkgCreator</key>
+	<string>IcebergBuilder 1.1.5</string>
+	<key>IFPkgFlagAllowBackRev</key>
+	<false/>
+	<key>IFPkgFlagAuthorizationAction</key>
+	<string>AdminAuthorization</string>
+	<key>IFPkgFlagDefaultLocation</key>
+	<string>/</string>
+	<key>IFPkgFlagFollowLinks</key>
+	<false/>
+	<key>IFPkgFlagInstallFat</key>
+	<false/>
+	<key>IFPkgFlagInstalledSize</key>
+	<integer>436</integer>
+	<key>IFPkgFlagIsRequired</key>
+	<false/>
+	<key>IFPkgFlagOverwritePermissions</key>
+	<false/>
+	<key>IFPkgFlagRelocatable</key>
+	<false/>
+	<key>IFPkgFlagRestartAction</key>
+	<string>NoRestart</string>
+	<key>IFPkgFlagRootVolumeOnly</key>
+	<false/>
+	<key>IFPkgFlagUpdateInstalledLanguages</key>
+	<false/>
+	<key>IFPkgFormatVersion</key>
+	<real>0.10000000149011612</real>
+	<key>IFRequirementDicts</key>
+	<array>
+		<dict>
+			<key>LabelKey</key>
+			<string>PPC</string>
+			<key>Level</key>
+			<string>requires</string>
+			<key>MessageKey</key>
+			<string>messagekey0</string>
+			<key>SpecArgument</key>
+			<string>hw.machine</string>
+			<key>SpecType</key>
+			<string>sysctl</string>
+			<key>TestObject</key>
+			<string>Power Macintosh</string>
+			<key>TestOperator</key>
+			<string>=</string>
+			<key>TitleKey</key>
+			<string>titlekey0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

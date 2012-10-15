@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+
+use strict;
+
+
+my $maxplug = "/Library/CFMSupport/MaxPlugLibCarbon.shlb";
+my $maxaudioplug = "/Library/CFMSupport/MaxAudioPlugLibCarbon.shlb";
+my $pluginsupport = "/Library/Application Support/C74 Plug-in Support";
+
+my $copy   = "/usr/bin/ditto";
+my $remove = "/bin/rm";
+
+
+if (-e $maxplug) 
+{
+    if(! -e $pluginsupport)
+    {
+
+	mkdir($pluginsupport,0755) or die "unable to create $pluginsupport: $!";
+    }
+
+    my @args = ($copy, "-rsrc",$maxplug, $pluginsupport);
+    system(@args) == 0 or die "system @args failed: $?";
+    @args = ($remove, "-f",$maxplug);
+    system(@args) == 0 or die "system @args failed: $?";
+}
+
+if (-e $maxaudioplug) 
+{
+    if(! -e $pluginsupport)
+    {
+	mkdir($pluginsupport,0755) or die "unable to create $pluginsupport: $!";
+    }
+
+    my @args = ($copy, "-rsrc",$maxaudioplug, $pluginsupport);
+    system(@args) == 0 or die "system @args failed: $?";
+    @args = ($remove, "-f",$maxaudioplug);
+    system(@args) == 0 or die "system @args failed: $?";
+}

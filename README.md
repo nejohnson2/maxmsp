@@ -1,1 +1,1 @@
-#  This is a repo for all of the max patches that i have created.  The majority of these are from Boxes Lines Rodes and cones class.
+#  Max Patches from Boxes, Lines, Rods and Cones class taught by Scott Fitzgerald

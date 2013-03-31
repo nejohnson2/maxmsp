@@ -1,1 +1,4 @@
-#  Max Patches from Boxes, Lines, Rods and Cones class taught by Scott Fitzgerald
+Boxes, Lines, Rods and Cones
+=========================
+
+Max Patches from a MaxMSP/Jitter class taught by Scott Fitzgerald.
